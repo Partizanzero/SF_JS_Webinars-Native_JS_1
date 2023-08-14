@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Конвертер валют</title>
+</head>
+
+<body>
+    <h1>Ковертер валют</h1>
+    <div>
+        <div class="main">
+            <div>
+                <label for="oamount">Сумма:</label>
+                <input type="text" class="searchbox" placeholder="0.00" id="oamount" />
+            </div>
+
+            <div>
+                <span>Из:</span>
+                <select id="sel1" class="from">
+                    <option value="">Выберите валюту...</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="KZT">KZT</option>
+                    <option value="TRY">TRY</option>
+                </select>
+            </div>
+
+            <div>
+                <span>В:</span>
+                <select name="" id="sel2" class="to">
+                    <option value="">Выберите валюту...</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="KZT">KZT</option>
+                    <option value="TRY">TRY</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="btn convert" type="submit">Конвертировать</button>
+                <button class="btn">Сбросить</button>
+            </div>
+        </div>
+
+        <div id="finalAmount">
+            <h2>Сумма в валюте:</h2>
+            <span class="finalValue"></span>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
